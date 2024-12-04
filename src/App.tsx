@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TestimonialCard from './components/TestimonialCard/TestimonialCard';
+import profilePic from './assets/profile-thumbnail.png'
 
 function App() {
+  const userData = {
+    imageUrl: profilePic,
+    name: 'Sarah Dole',
+    handle: '@sarahdole',
+    testimonial: `I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!`
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <TestimonialCard userData={userData}/>
+      </div>
     </div>
   );
 }
