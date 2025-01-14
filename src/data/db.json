@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Larry David",
+      "email": "larry@example.com",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "Jeff Greene",
+      "email": "jeff@example.com",
+      "status": "inactive"
+    },
+    {
+      "id": "3",
+      "name": "Leon Black",
+      "email": "leon@example.com",
+      "status": "active"
+    }
+  ]
+}

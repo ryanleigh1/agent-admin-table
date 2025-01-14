@@ -1,10 +1,70 @@
-# Getting Started with Create React App
+# Full Stack Engineer Take Home Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thanks for taking the time to review the assignment! The goal is to build a simple web application that allows an admin to manage a network of agents.
+
+## Features
+
+The core features include:
+- Displaying a list of agents
+- ability to create new agents
+- ability to edit existing agents
+- ability to delte an agent
+
+I used the following libraries to help:
+- React
+- Typescript
+- Tailwind CSS
+- Hero Icons
+- Tanstack React Table
+
+Tanstack React Table is used for the data table.  It helped implement a features including searching/filtering on the name and email fields, as well as pagination.
+
+Since this is a smaller application, I chose to handle state management with React Context API.  For larger apps, I would use a more robust state management system like Redux, but I didn't have to worry about things like performance issues.
+
+Additional features include:
+- Unit tests using Jests
+- Search/Filter (on name/email)
+- API Integration (using a simple json-server)
+
+## Running the project
+
+1. Install dependencies:   `npm install`
+
+2. Run the json server in the terminal:  `npm run start:api`
+
+3. In a separate terminal, start the app"   `npm start`
+
+4. Navigate to http://localhost:3000/
+
+
+## Screen Shots
+
+Admin Table
+![Admin Table](image-1.png)
+
+![Add New User Modal](image-2.png)
+
+Edit User Modal
+![Edit User Modal](image-3.png)
+
+Delete User Modal
+![Delete Modal](image.png)
+
+## Features I'd Add in the Future
+- Sort 
+- Filter by status
+- Agent Details Page
+- Maybe debounce text input during search
+- Fuzzy search?
+- Responsive design
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run start:api`
+
+Runs the json server
 
 ### `npm start`
 
@@ -29,18 +89,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

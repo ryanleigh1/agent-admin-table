@@ -1,7 +1,8 @@
 .App {
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  height: 100vh;          /* Makes the container fill the viewport height */
-  margin: 0;              /* Removes any default margin */
-  background-color: #f0f0f0; /* Optional: Adds a background color */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
