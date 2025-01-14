@@ -107,7 +107,7 @@ const Table: React.FC<TableProps> = ({
   const { getHeaderGroups, getRowModel } = table;
 
   if (users?.length === 0) {
-    return <div>No users available.</div>;
+    return <div>No users available.  Please make sure the json-server is running.</div>;
   }
 
   return (
